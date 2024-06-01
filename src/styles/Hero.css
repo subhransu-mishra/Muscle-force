@@ -1,0 +1,141 @@
+.hero {
+  color: red;
+}
+
+.second-main {
+  background-image: url("/hero.jpeg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.muscle {
+  position: absolute;
+  font-weight: 900;
+  font-size: 9vh;
+  left: 350px;
+  top: 250px;
+  color: navy;
+  text-transform: uppercase;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 3s steps(30, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.slogan {
+  position: absolute;
+  left: 580px;
+  top: 330px;
+  font-weight: 900;
+  font-size: 200%;
+  color: #05f51d;
+  opacity: 0;
+  animation: fadeIn 4s forwards 40;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.muscle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image1,
+.image2,
+.image3 {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+.text1 {
+  color: navy;
+  font-size: 340%;
+  font-weight: 800;
+  position: absolute;
+  left: 800px;
+  top: 1000px;
+  width: 100;
+}
+
+.text2,
+.text4 {
+  color: black;
+  font-weight: 600;
+  position: absolute;
+}
+
+.text2 {
+  top: 1080px;
+  left: 800px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 4s forwards infinite;
+}
+
+@keyframes slideInRight {
+  from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.text3 {
+  color: navy;
+  font-size: 340%;
+  font-weight: 800;
+  position: relative;
+  bottom: 440px;
+}
+
+.text4 {
+  top: 1400px;
+  width: 700px;
+  padding-left: 10px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 4s forwards infinite;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.image2 {
+  width: 633px;
+  height: auto;
+  padding: 10px;
+  position: relative;
+  left: 900px;
+}

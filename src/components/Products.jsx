@@ -43,8 +43,8 @@ const data = [
 const Products = () => {
   return (
     <div className="container mx-auto my-8">
-      <h1 className="text-3xl font-semibold mb-2 text-center">
-        Our Best Sellers
+      <h1 className="text-5xl font-semibold mb-2 text-center text-blue-700 mb-9">
+        Our Best Salers
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
         {data.map((item) => (
@@ -70,7 +70,7 @@ const Products = () => {
                     rel="noopener noreferrer"
                   >
                     <button
-                      className="bg-green-700 text-white py-1 px-2 rounded-md font-semibold"
+                      className="bg-sky-500 text-white py-1 px-2 rounded-md font-semibold "
                       role="button" // Add role for accessibility
                     >
                       BUY

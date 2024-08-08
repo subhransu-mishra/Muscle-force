@@ -25,12 +25,12 @@ const BmiCalculator = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
-      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">BMI Calculator</h2>
+    <div className="flex items-center justify-center min-h-screen bg-black">
+      <div className="w-full max-w-md bg-gradient-to-r from-purple-500 to-indigo-600 p-8 rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold mb-4 text-center text-white">BMI Calculator</h2>
         <div className="flex flex-col space-y-4">
           <div className="flex items-center space-x-4">
-            <label htmlFor="weight" className="text-gray-800">Weight (kg):</label>
+            <label htmlFor="weight" className="text-white">Weight (kg):</label>
             <input
               id="weight"
               type="number"
@@ -40,7 +40,7 @@ const BmiCalculator = () => {
             />
           </div>
           <div className="flex items-center space-x-4">
-            <label htmlFor="height" className="text-gray-800">Height (cm):</label>
+            <label htmlFor="height" className="text-white">Height (cm):</label>
             <input
               id="height"
               type="number"
@@ -51,7 +51,7 @@ const BmiCalculator = () => {
           </div>
           <button
             onClick={calculateBMI}
-            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+            className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-900 transition-colors"
           >
             Calculate
           </button>
@@ -60,12 +60,12 @@ const BmiCalculator = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-xl font-semibold text-center text-gray-800"
+              className="text-xl font-semibold text-center text-white"
             >
               Your BMI: {bmi} ({getBMICategory()})
             </motion.div>
           )}
-          <div className="text-sm text-gray-500 text-center">
+          <div className="text-sm text-white text-center">
             BMI Categories:
             <br />
             Underweight = {"<"}18.5

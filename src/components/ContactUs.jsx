@@ -3,8 +3,8 @@ import React from "react";
 const ContactUs = () => {
   return (
     <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-center py-4 text-4xl font-bold text-green-800">
-        Contact
+      <h1 className="text-center py-4 text-4xl font-bold text-sky-500">
+        Contact Us
       </h1>
       <form
         action="https://getform.io/f/1cd8559d-ab81-4df7-9b52-ca1d8eb2c95f"
@@ -13,7 +13,7 @@ const ContactUs = () => {
       >
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
-            <label className="uppercase text-sm py-2">Name</label>
+            <label className="uppercase text-sm py-2 text-white">Name</label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="text"
@@ -22,7 +22,7 @@ const ContactUs = () => {
             />
           </div>
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm p-1">Phone Number</label>
+            <label className="uppercase text-sm p-1 text-white">Phone Number</label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="number"
@@ -32,7 +32,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Email</label>
+          <label className="uppercase text-sm py-2  text-white">Email</label>
           <input
             className="border-2 rounded-lg p-3 flex border-gray-300"
             type="email"
@@ -41,7 +41,7 @@ const ContactUs = () => {
           />
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Subject</label>
+          <label className="uppercase text-sm py-2 text-white">Subject</label>
           <input
             className="border-2 rounded-lg p-3 flex border-gray-300"
             type="text"
@@ -49,7 +49,7 @@ const ContactUs = () => {
           />
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Message</label>
+          <label className="uppercase text-sm py-2 text-white">Message</label>
           <textarea
             className="border-2 rounded-lg p-3 flex border-gray-300"
             rows="10"
@@ -57,7 +57,7 @@ const ContactUs = () => {
             required
           />
         </div>
-        <button className="bg-green-600 font-medium text-white mt-4 w-full p-4 rounded-lg">
+        <button className="bg-sky-500 font-medium text-white mt-4 w-full p-4 rounded-lg">
           Send Message
         </button>
       </form>
